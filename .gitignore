@@ -2,3 +2,6 @@
 *.out
 *.sh
 .vscode
+*.exe
+*.o
+*.hi
