@@ -1,7 +1,6 @@
 import           Data.Bifunctor (bimap)
 import           Data.List      (mapAccumL, sort)
 import           Data.Maybe     (catMaybes)
-import           Data.Ord       (Down (..))
 
 main :: IO ()
 main = interact $ unlines . (\x -> ["A", a x, "B", b x]) . bothmap sort . unzip . xysWhichAre (== '#') . lines
