@@ -39,9 +39,9 @@ pipe x c
         sym fa fb = let a = fa x; b = fb x in [((a, x), b), ((b, x), a)]
 
 north (x, y) = (x    , y - 1)
-east (x, y)  = (x + 1, y)
+east  (x, y) = (x + 1, y    )
 south (x, y) = (x    , y + 1)
-west (x, y)  = (x - 1, y)
+west  (x, y) = (x - 1, y    )
 
 readMatrix :: [[Char]] -> [(V2, Char)]
 readMatrix xss = concat [ [ ((c, r), x)  | (c, x) <- zip [0 ..] xs ] | (r, xs) <- zip [0 ..] xss ]
